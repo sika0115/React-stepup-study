@@ -7,6 +7,8 @@ const style = {
 export const ChildArea = (props) => {
   const { open } = props;
   console.log("ChildAreaがレンダリングされた");
+
+  //レンダリング負荷
   const data = [...Array(100).keys()];
   data.forEach(() => {
     console.log("...");
